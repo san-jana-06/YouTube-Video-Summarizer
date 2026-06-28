@@ -1,0 +1,23 @@
+User enters YouTube URL
+            │
+            ▼
+      urlparse()
+            │
+            ▼
+ Is it youtu.be URL?
+      │             │
+     Yes            No
+      │             │
+      ▼             ▼
+Take path      Is it youtube.com?
+                    │
+              Yes         No
+               │           │
+               ▼           ▼
+      Get 'v' parameter   Invalid URL
+               │
+               ▼
+        Extract Video ID
+               │
+               ▼
+        Display Video ID
